@@ -1,0 +1,27 @@
+{
+  "name": "@epok.tech/is-type",
+  "version": "0.0.1",
+  "description": "Simple JavaScript type-checking",
+  "main": "index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keeffEoghan/is-type.git"
+  },
+  "author": "Eoghan O'Keeffe <epok.tech@gmail.com> (https://epok.tech)",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 12.14.1 || *",
+    "yarn": ">= 1.22.0 || *"
+  },
+  "bugs": {
+    "url": "https://github.com/keeffEoghan/is-type/issues"
+  },
+  "homepage": "https://github.com/keeffEoghan/is-type#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "types"
+  ]
+}
