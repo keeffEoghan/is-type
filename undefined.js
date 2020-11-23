@@ -1,5 +1,5 @@
-import isType from './type';
+import { isType } from './type';
 
-export const isUndefined = (x) => isType(x, 'Undefined');
+export const isUndefined = (x) => isType('Undefined', x);
 
 export default isUndefined;

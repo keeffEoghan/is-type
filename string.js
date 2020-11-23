@@ -1,5 +1,5 @@
-import isType from './type';
+import { isType } from './type';
 
-export const isString = (x) => isType(x, 'String');
+export const isString = (x) => isType('String', x);
 
 export default isString;

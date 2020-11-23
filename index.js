@@ -1,5 +1,5 @@
 // @see https://stackoverflow.com/a/17772086/716898
-export { isType } from './type';
+export { type, isType } from './type';
 export { isArguments } from './arguments';
 export { isFunction } from './function';
 export { isString } from './string';
@@ -9,4 +9,4 @@ export { isRegExp } from './reg-exp';
 export { isNull } from './null';
 export { isUndefined } from './undefined';
 
-export default isType;
+export default type;
