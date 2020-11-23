@@ -1,5 +1,5 @@
 // @see https://stackoverflow.com/a/17772086/716898
-export { type, isType } from './type';
+export { type } from './type';
 export { isArguments } from './arguments';
 export { isFunction } from './function';
 export { isString } from './string';

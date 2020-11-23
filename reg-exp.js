@@ -1,5 +1,5 @@
-import { isType } from './type';
+import { type } from './type';
 
-export const isRegExp = (x) => isType('RegExp', x);
+export const isRegExp = (x) => type(x) === 'RegExp';
 
 export default isRegExp;

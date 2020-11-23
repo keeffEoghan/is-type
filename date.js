@@ -1,5 +1,5 @@
-import { isType } from './type';
+import { type } from './type';
 
-export const isDate = (x) => isType('Date', x);
+export const isDate = (x) => type(x) === 'Date';
 
 export default isDate;

@@ -1,5 +1,5 @@
-import { isType } from './type';
+import { type } from './type';
 
-export const isArguments = (x) => isType('Arguments', x);
+export const isArguments = (x) => type(x) === 'Arguments';
 
 export default isArguments;
