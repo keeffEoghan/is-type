@@ -1,8 +1,7 @@
 {
   "name": "@epok.tech/is-type",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Simple JavaScript type-checking",
-  "main": "index.js",
   "type": "module",
   "repository": {
     "type": "git",
@@ -14,12 +13,57 @@
     "node": ">= 12.14.1 || *",
     "yarn": ">= 1.22.0 || *"
   },
+  "packageManager": "yarn@3.1.0",
   "bugs": {
     "url": "https://github.com/keeffEoghan/is-type/issues"
   },
   "homepage": "https://github.com/keeffEoghan/is-type#readme",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "yarn build",
+    "dev": "parcel --log-level verbose --target es --target cjs",
+    "build": "rm -rf ./dist/ && parcel build --target es --target cjs",
+    "build:safe": "yarn build --no-cache"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.1"
+  },
+  "main": "dist/main/index.js",
+  "module": "dist/es/index.js",
+  "source": [
+    "arguments.js",
+    "date.js",
+    "function.js",
+    "index.js",
+    "null.js",
+    "number.js",
+    "reg-exp.js",
+    "string.js",
+    "type.js",
+    "undefined.js"
+  ],
+  "files": [
+    "*.js",
+    "dist/**/*"
+  ],
+  "targets": {
+    "cjs": {
+      "outputFormat": "commonjs",
+      "isLibrary": true,
+      "engines": {
+        "browsers": "last 2 versions, > 0.5%, not dead"
+      },
+      "distDir": "dist/main/",
+      "publicUrl": "dist/main/"
+    },
+    "es": {
+      "outputFormat": "esmodule",
+      "isLibrary": true,
+      "engines": {
+        "browsers": "last 2 versions, > 0.5%, not dead"
+      },
+      "distDir": "dist/es/",
+      "publicUrl": "dist/es/"
+    }
   },
   "keywords": [
     "types"
